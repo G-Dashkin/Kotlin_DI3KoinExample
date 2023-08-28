@@ -5,11 +5,19 @@ import android.os.Bundle
 import android.util.Log
 import androidx.lifecycle.ViewModelProvider
 import com.example.kotlin_di3koinexample.databinding.ActivityHilt1Step2Binding
+import org.koin.androidx.viewmodel.ext.android.viewModel
 
 class HiltActivity1Step2 : AppCompatActivity() {
 
+    // Класс MainViewModel мы удалили, так как он нам больше не нужен
+    // Вместо него вызваем by viewModel<>() из org.koin.androidx.viewmodel.ext.android.viewModel
+
     private lateinit var binding: ActivityHilt1Step2Binding
-    private lateinit var viewModel: MainViewModel
+    private val viewModel by viewModel<MainViewModel>()
+
+    // т.е. функция by viewModel<MainViewModel>() после ее вызова проходится по всем di модулям и
+    // ищит правила создания вьюМодели
+    // Правила для создания вьюМодели мы пишем в AppModule
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -18,7 +26,8 @@ class HiltActivity1Step2 : AppCompatActivity() {
 
         Log.d("MyLog", "Activity created")
 
-        viewModel = ViewModelProvider(this, MainViewModelFactory(this)).get(MainViewModel::class.java)
+        // это строка нам уже не нужна, все создание вьюМодели уже произошло
+//        viewModel = ViewModelProvider(this, MainViewModelFactory(this)).get(MainViewModel::class.java)
 
         viewModel.resultLiveData.observe(this, { text ->
             binding.dataTextView.text = text

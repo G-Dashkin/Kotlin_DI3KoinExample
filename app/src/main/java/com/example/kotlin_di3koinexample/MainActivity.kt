@@ -4,7 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.kotlin_di3koinexample.Hilt1.HiltActivity1
-import com.example.kotlin_di3koinexample.Hilt2.HiltActivity2
+import com.example.kotlin_di3koinexample.Hilt2.presentation.HiltActivity2
 import com.example.kotlin_di3koinexample.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
