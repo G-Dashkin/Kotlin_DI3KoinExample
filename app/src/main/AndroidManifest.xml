@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <application
-        android:name=".Hilt3.step2.MyApp"
+        android:name=".Hilt3.step3.MyApp"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Kotlin_DI3KoinExample"
         tools:targetApi="31">
+        <activity
+            android:name=".Hilt3.step3.HiltActivity3Step3"
+            android:exported="false" />
         <activity
             android:name=".Hilt3.step2.HiltActivity3Step2"
             android:exported="false" />
