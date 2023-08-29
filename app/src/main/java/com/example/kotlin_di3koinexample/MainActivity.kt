@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.kotlin_di3koinexample.Hilt1.HiltActivity1
 import com.example.kotlin_di3koinexample.Hilt2.presentation.HiltActivity2
+import com.example.kotlin_di3koinexample.Hilt3.step2.HiltActivity3Step2
 import com.example.kotlin_di3koinexample.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -21,6 +22,9 @@ class MainActivity : AppCompatActivity() {
             }
             hilt2.setOnClickListener {
                 startActivity(Intent(this@MainActivity, HiltActivity2::class.java))
+            }
+            hilt3.setOnClickListener {
+                startActivity(Intent(this@MainActivity, HiltActivity3Step2::class.java))
             }
         }
 

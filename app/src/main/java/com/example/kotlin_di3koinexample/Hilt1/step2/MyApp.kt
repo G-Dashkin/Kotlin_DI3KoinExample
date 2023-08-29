@@ -1,4 +1,4 @@
-package com.example.kotlin_di3koinexample.Hilt1.step2.app
+package com.example.kotlin_di3koinexample.Hilt1.step2
 
 import android.app.Application
 import com.example.kotlin_di3koinexample.Hilt1.step2.di.appModule
@@ -10,7 +10,7 @@ import org.koin.core.context.startKoin
 import org.koin.core.logger.Level
 
 // Класс App является точкой входа в приложение и необходим для Koin
-class App: Application() {
+class MyApp: Application() {
 
     // Метод onCreate() вызывается каждый раз, когда заново стартуется приложение
     // и в этом методе мы запускаем Koin, через startKoin и здесь указываем все модули
@@ -19,7 +19,7 @@ class App: Application() {
 
         startKoin {
             androidLogger(Level.DEBUG) // позволяет логировать ошибки
-            androidContext(this@App) // это тот контекст, который будет указываться в data module и необходим для работы sharedPreference
+            androidContext(this@MyApp) // это тот контекст, который будет указываться в data module и необходим для работы sharedPreference
             modules(listOf(appModule, domainModule, dataModule))
         }
     }
