@@ -4,6 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Hilt3.step2.HiltActivity3Step2">
+    tools:context=".Koin3.step2.HiltActivity3Step2">
 
 </androidx.constraintlayout.widget.ConstraintLayout>

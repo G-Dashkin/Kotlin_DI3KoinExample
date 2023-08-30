@@ -23,16 +23,16 @@
         android:layout_height="wrap_content"/>
 
     <Button
-        android:id="@+id/hilt3"
+        android:id="@+id/hilt32"
         android:layout_margin="5dp"
-        android:text="Hilt 3"
+        android:text="Hilt 3 Step 2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
     <Button
-        android:id="@+id/hilt4"
+        android:id="@+id/hilt33"
         android:layout_margin="5dp"
-        android:text="Hilt 4"
+        android:text="Hilt 3 Step 3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 

@@ -51,10 +51,6 @@ dependencies {
     implementation 'io.insert-koin:koin-android:3.4.3'
     implementation 'io.insert-koin:koin-test:3.4.3'
 
-//    implementation 'io.insert-koin:koin-androidx-scope:2.2.3'
-//    implementation 'io.insert-koin:koin-androidx-viewmodel:2.2.3'
-//    implementation 'io.insert-koin:koin-androidx-fragment:2.2.3'
-
     //Room
     implementation 'androidx.room:room-runtime:2.5.2'
     kapt 'androidx.room:room-compiler:2.5.2'

@@ -3,10 +3,10 @@ package com.example.kotlin_di3koinexample
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.kotlin_di3koinexample.Hilt1.HiltActivity1
-import com.example.kotlin_di3koinexample.Hilt2.presentation.HiltActivity2
-import com.example.kotlin_di3koinexample.Hilt3.step2.HiltActivity3Step2
-import com.example.kotlin_di3koinexample.Hilt3.step3.HiltActivity3Step3
+import com.example.kotlin_di3koinexample.Koin1.HiltActivity1
+import com.example.kotlin_di3koinexample.Koin2.presentation.HiltActivity2
+import com.example.kotlin_di3koinexample.Koin3.step2.HiltActivity3Step2
+import com.example.kotlin_di3koinexample.Koin3.step3.HiltActivity3Step3
 import com.example.kotlin_di3koinexample.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -24,10 +24,10 @@ class MainActivity : AppCompatActivity() {
             hilt2.setOnClickListener {
                 startActivity(Intent(this@MainActivity, HiltActivity2::class.java))
             }
-            hilt3.setOnClickListener {
+            hilt32.setOnClickListener {
                 startActivity(Intent(this@MainActivity, HiltActivity3Step2::class.java))
             }
-            hilt4.setOnClickListener {
+            hilt33.setOnClickListener {
                 startActivity(Intent(this@MainActivity, HiltActivity3Step3::class.java))
             }
         }
