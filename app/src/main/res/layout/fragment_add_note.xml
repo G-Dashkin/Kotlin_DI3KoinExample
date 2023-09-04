@@ -6,7 +6,7 @@
     android:layout_height="wrap_content"
     android:padding="16dp"
     android:id="@+id/rootContainer"
-    tools:context=".Koin2.presentation.AddNoteFragment">
+    tools:context=".Koin3Room.presentation.AddNoteFragment">
 
     <ImageView
         android:id="@+id/imgClose"

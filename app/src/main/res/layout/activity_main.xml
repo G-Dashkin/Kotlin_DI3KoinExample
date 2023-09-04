@@ -12,27 +12,53 @@
         android:id="@+id/hilt1"
         android:layout_margin="5dp"
         android:text="Hilt 1"
+        android:gravity="left|center"
+        android:paddingLeft="150dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
     <Button
         android:id="@+id/hilt2"
         android:layout_margin="5dp"
-        android:text="Hilt 2"
+        android:text="Hilt 2 Simple"
+        android:gravity="left|center"
+        android:paddingLeft="150dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
     <Button
-        android:id="@+id/hilt32"
+        android:id="@+id/hilt3"
         android:layout_margin="5dp"
-        android:text="Hilt 3 Step 2"
+        android:text="Hilt 3 Room"
+        android:gravity="left|center"
+        android:paddingLeft="150dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
     <Button
-        android:id="@+id/hilt33"
+        android:id="@+id/hilt42"
         android:layout_margin="5dp"
-        android:text="Hilt 3 Step 3"
+        android:text="Hilt 4 Step 2"
+        android:gravity="left|center"
+        android:paddingLeft="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/hilt43"
+        android:layout_margin="5dp"
+        android:text="Hilt 4 Step 3 ViewModel"
+        android:gravity="left|center"
+        android:paddingLeft="150dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/hilt5"
+        android:layout_margin="5dp"
+        android:text="Hilt 5 Retrofit"
+        android:gravity="left|center"
+        android:paddingLeft="150dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
