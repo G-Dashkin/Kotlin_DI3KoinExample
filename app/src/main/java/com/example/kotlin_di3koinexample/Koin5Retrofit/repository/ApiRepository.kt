@@ -12,17 +12,14 @@ class ApiRepository(
     private val apiServices: ApiServices,
 ) {
     suspend fun getPhoto(strSearchPhoto: String) = flow {
-        Log.d("MyLog", DataStatus.toString())
         emit(DataStatus.loading())
         val result = apiServices.getPhoto(strSearchPhoto)
-        Log.d("MyLog", result.code().toString())
         when (result.code()) {
             200 -> emit(DataStatus.success(result.body()?.hits))
             400 -> emit(DataStatus.error(result.message()))
             500 -> emit(DataStatus.error(result.message()))
         }
     }.catch {
-        Log.d("MyLog", it.message.toString())
         emit(DataStatus.error(it.message.toString()))
         }.flowOn(Dispatchers.IO)
 }
